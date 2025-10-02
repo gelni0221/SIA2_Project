@@ -15,3 +15,6 @@ https://youtu.be/byHcYRpMgI4?si=gPyotzDtfMqeH3gz
 
 How to Hash Passwords in Python
 https://www.youtube.com/watch?v=yePHM2Ks07c
+
+Tkinter Beginner Course - Python GUI Development
+https://www.youtube.com/watch?v=ibf5cx221hk
