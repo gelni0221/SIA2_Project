@@ -7,14 +7,20 @@ https://youtu.be/SCos1o368iE?si=0ZrSk29zAUsmlhAu
 Python Video Player Using Tkinter | How to Make a Video Player in Python Tkinter?
 https://youtu.be/MpteE-X_RFw?si=WbVtEsy0jWBPmh2r
 
-Python SQLite Tutorial: Complete Overview - Creating a Database, Table, and Running Queries
-https://youtu.be/pd-0G0MigUA?si=L5qX0tSx_PSra6xg
-
-SQLite Databases With Python - Full Course
-https://youtu.be/byHcYRpMgI4?si=gPyotzDtfMqeH3gz
-
 How to Hash Passwords in Python
 https://www.youtube.com/watch?v=yePHM2Ks07c
 
 Tkinter Beginner Course - Python GUI Development
 https://www.youtube.com/watch?v=ibf5cx221hk
+
+Creating an Interactive SQLite Database in Python Tutorial for Beginners (2021)
+https://www.youtube.com/watch?v=ho1hmfBipvI
+
+Working with SQLite Databases in PyCharm
+https://www.youtube.com/watch?v=yBDCykrKbm4
+
+Python SQLite Tutorial: Complete Overview - Creating a Database, Table, and Running Queries
+https://youtu.be/pd-0G0MigUA?si=L5qX0tSx_PSra6xg
+
+SQLite Databases With Python - Full Course
+https://youtu.be/byHcYRpMgI4?si=gPyotzDtfMqeH3gz
