@@ -4,11 +4,11 @@ import tkinter as tk
 
 
 def say_hello():
-    label.config(text="Hello, Tkinter!")
+    label.config(text="Hello, Tkinter !")
 
 # Create the main window
 root = tk.Tk()
-root.title("Simple Tkinter App")
+root.title("Simple Tkinter (sources) App")
 root.geometry("300x150")
 
 # Create a label

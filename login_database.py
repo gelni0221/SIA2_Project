@@ -1,7 +1,7 @@
 import sqlite3
-import argon2
+# import argon2
 
-conn = sqlite3.connect('account.db')
+conn = sqlite3.connect('db/account.db')
 c = conn.cursor()
 
 # FINISHED
@@ -12,10 +12,10 @@ c = conn.cursor()
 #                 )
 #             """)
 
-password = "thispassworldwillbehashed"
+# password = "thispassworldwillbehashed"
 
-ph = argon2.PasswordHasher()
-hashed_password = ph.hash(password)
+# ph = argon2.PasswordHasher()
+# hashed_password = ph.hash(password)
 
 # print(hashed_password)
 

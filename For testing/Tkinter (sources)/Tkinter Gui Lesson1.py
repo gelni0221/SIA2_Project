@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter.ttk import Combobox
 
-#Tkinter is a GUI
+#Tkinter (sources) is a GUI
 #provides variety of widgets
 
 window = Tk()

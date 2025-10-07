@@ -12,7 +12,7 @@ class MyGUI:
         self.textbox = tk.Text(self.root,height=5,font=('Arial',16))
         self.textbox.pack(padx=10, pady=10)
 
-        #IntVar() is a Tkinter variable class that stores an integer and can automatically update when the widget state changes.
+        #IntVar() is a Tkinter (sources) variable class that stores an integer and can automatically update when the widget state changes.
         #basically it is 0 when UNCHECKED AND 1 IF IT IS CHECKED, YOU PUT THIS INTO A CHECKBUTTON
         self.check_state = tk.IntVar()
 
