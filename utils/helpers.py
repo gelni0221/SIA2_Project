@@ -6,6 +6,6 @@ def validate_password(existing_hash,entered_password):
     ph = PasswordHasher()
     try:
         ph.verify(existing_hash, entered_password)
-        print("Login Success")
+        return True
     except VerifyMismatchError:
         print("Credentials are incorrect")
