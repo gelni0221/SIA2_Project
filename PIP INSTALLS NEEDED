@@ -1,0 +1,5 @@
+pip install argon2-cffi
+pip install python-dotenv
+
+import argon2
+from dotenv import load_dotenv
