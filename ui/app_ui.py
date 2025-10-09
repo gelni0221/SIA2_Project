@@ -40,8 +40,9 @@ class App:
         password = self.pass_entry.get()
         if login(username,password):
             self.show_main_menu()
+            messagebox.showinfo("Success!","Log In Successful")
         else:
-            messagebox.showerror("Error", "Invalid credentials")
+            messagebox.showerror("Error", "Invalid Credentials")
 
     def show_main_menu(self):
         self.widgets.pack_forget()
