@@ -24,3 +24,6 @@ https://youtu.be/pd-0G0MigUA?si=L5qX0tSx_PSra6xg
 
 SQLite Databases With Python - Full Course
 https://youtu.be/byHcYRpMgI4?si=gPyotzDtfMqeH3gz
+
+How To Use Python Steam API || Steam game API python
+https://www.youtube.com/watch?v=LaRHkSVvDjI
