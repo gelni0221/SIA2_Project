@@ -26,23 +26,20 @@ if response.status_code == 200:
     data = response.json()
 
     app_data = data["1687950"]["data"]
-    print(app_data["name"])
-    print(app_data["release_date"]["date"])
-
-    print(app_data["developers"])
-    print(app_data["publishers"])
-    print(app_data["price_overview"]["final_formatted"])
-    print(app_data["short_description"])
-    minimum_specs = clean_html(app_data["pc_requirements"]["minimum"])
-    recc_specs = clean_html(app_data["pc_requirements"]["recommended"])
-    print(minimum_specs)
-    print(recc_specs)
-    print(app_data["website"])
-    for a in app_data["genres"]:
-        print(a["description"])
-    clean_data_game = clean_html(app_data["about_the_game"])
-    print(clean_data_game)
-
+    # print(app_data["name"])
+    # print(app_data["release_date"]["date"])
+    # print(app_data["developers"])
+    # print(app_data["publishers"])
+    # print(app_data["price_overview"]["final_formatted"])
+    # print(app_data["short_description"])
+    # minimum_specs = clean_html(app_data["pc_requirements"]["minimum"])
+    # recc_specs = clean_html(app_data["pc_requirements"]["recommended"])
+    # print(minimum_specs)
+    # print(recc_specs)
+    # print(app_data["website"])
+    # for a in app_data["genres"]:
+    #     print(a["description"])
+    # clean_data_game = clean_html(app_data["about_the_game"])
     print(data)
 
 
