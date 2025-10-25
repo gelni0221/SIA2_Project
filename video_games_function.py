@@ -26,7 +26,7 @@ class VideoGames:
         self.hd_label = tk.Label(self.root, image=self.tk_hd_img, bd=0)
         self.hd_label.place(relx=1.0, y=50, anchor='ne', x=-40)
 
-        #TEXTS
+        #steam api texts
         self.title_label = tk.Label(self.root, bd=0, text=self.appdata_persona["name"], font=('Arial', 30),
                                     bg="#1A1A1A", fg="white")
         self.title_label.place(x=40, y=50)
