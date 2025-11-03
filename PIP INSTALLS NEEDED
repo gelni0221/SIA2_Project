@@ -16,6 +16,8 @@ pip install tkhtmlview
 - this is for urls
 pip install requests
 
+pip install tkvideoplayer
+
 import os
 from steam_web_api import Steam
 
