@@ -9,4 +9,6 @@ def find_user_by_username(username):
     conn.close()
     if row:
         return {"id": row[0], "username": row[1], "password_hash": row[2]}
+    else:
+        return "No Entry found"
 
