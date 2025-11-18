@@ -23,7 +23,6 @@ class App:
         self.other_frame = Other_frame(self.root, self)
 
         # self.show_login_frame()
-
     #   test
         self.show_main_menu_frame()
 
@@ -52,7 +51,7 @@ class App:
 
     def show_movie_frame(self):
         self.main_frame.pack_forget()
-        self.movie_frame.pack()
+        self.movie_frame.pack(fill="both", expand=True)
 
     def show_game_frame(self):
         self.main_frame.pack_forget()
