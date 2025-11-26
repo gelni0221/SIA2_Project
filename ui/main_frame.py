@@ -23,7 +23,7 @@ class Main_frame(tk.Frame):
 
         self.music_button = tk.Button(self, text="Music and Audio", font=('Helvetica', 20), width=30, height=2,
                                       relief="ridge", bg="#a4151e", fg="white", cursor="hand2",
-                                      command=self.controller.show_other_frame)
+                                      command=self.controller.show_music_frame)
         self.music_button.pack(padx=10)
 
         self.video_games_button = tk.Button(self, text="Video Games", font=('Helvetica', 20), width=30,

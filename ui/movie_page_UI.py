@@ -152,18 +152,4 @@ class Movie_frame(tk.Frame):
 
 
 
-class Other_frame(tk.Frame):
-    def __init__(self,parent,controller):
-        super().__init__(parent)
-
-        self.parent = parent
-        self.controller = controller
-
-        self.text = tk.Label(self, text="Im the Other window")
-        self.text.pack()
-
-        self.back_button = tk.Button(self, text="Back", command=lambda: self.controller.show_main_menu_frame())
-        self.back_button.pack()
-
-
 
