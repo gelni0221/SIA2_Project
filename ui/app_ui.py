@@ -2,10 +2,10 @@
 from controllers.auth_controller import login
 from tkinter import messagebox
 import tkinter as tk
-from ui.movie_page_UI import Movie_frame,Other_frame
+from ui.movie_page_UI import Movie_frame, Other_frame
 from ui.login_frame import Login_frame
 from ui.main_frame import Main_frame
-
+from ui.videogames_frame import game_frame
 
 
 class App:
@@ -19,6 +19,7 @@ class App:
         self.login_frame = Login_frame(self.root, self)
         self.main_frame = Main_frame(self.root, self)
         self.movie_frame = Movie_frame(self.root, self)
+        self.game_frame = game_frame(self.root, self)
         self.other_frame = Other_frame(self.root, self)
 
         # self.show_login_frame()
@@ -41,6 +42,7 @@ class App:
     def show_main_menu_frame(self):
         self.login_frame.pack_forget()
         self.movie_frame.pack_forget()
+        self.game_frame.pack_forget()
         self.other_frame.pack_forget()
         self.main_frame.pack()
         self.root.configure(bg="#17120f")
@@ -52,7 +54,10 @@ class App:
         self.main_frame.pack_forget()
         self.movie_frame.pack()
 
+    def show_game_frame(self):
+        self.main_frame.pack_forget()
+        self.game_frame.pack(fill="both", expand=True)
+
     def show_other_frame(self):
         self.main_frame.pack_forget()
         self.other_frame.pack()
-
