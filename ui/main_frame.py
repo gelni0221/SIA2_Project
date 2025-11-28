@@ -28,7 +28,7 @@ class Main_frame(tk.Frame):
 
         self.video_games_button = tk.Button(self, text="Video Games", font=('Helvetica', 20), width=30,
                                             height=2, relief="ridge", bg="#a4151e", fg="white", cursor="hand2",
-                                            command=self.controller.show_other_frame)
+                                            command=self.controller.show_game_frame)
         self.video_games_button.pack(padx=10, pady=10)
 
 
