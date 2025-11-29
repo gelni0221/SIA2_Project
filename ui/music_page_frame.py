@@ -34,21 +34,24 @@ class Music_frame(tk.Frame):
         self.left_frame.grid(column=1, row=2)
 
         # Display
-        self.movie_poster = tk.Label(self.left_frame)
-        self.movie_poster.image = ""
-        self.movie_poster.pack(anchor="nw")
+        self.music_poster = tk.Label(self.left_frame)
+        self.music_poster.image = ""
+        self.music_poster.pack(anchor="nw")
 
-        self.title_content = tk.Label(self.left_frame, text="Im the Song Title", font=('Helvetica', 50),
+        self.title_content = tk.Label(self.left_frame, text="Pighati", font=('Helvetica', 50),
                                       justify="left", bg="#17120f", fg="white")
         self.title_content.pack(anchor="nw")
 
-        self.artist_content = tk.Label(self.left_frame, text="Im the Musician", font=('Helvetica', 20),
+        self.artist_content = tk.Label(self.left_frame, text="Jake Arcinal", font=('Helvetica', 20),
                                       justify="left", bg="#17120f", fg="white")
         self.artist_content.pack(anchor="nw")
 
-        self.album_content = tk.Label(self.left_frame, text="Im the album", font=('Helvetica', 20),
+        self.album_content = tk.Label(self.left_frame, text="Album: Tukso", font=('Helvetica', 20),
                                       justify="left", bg="#17120f", fg="white")
         self.album_content.pack(anchor="nw")
+        self.release_date_content = tk.Label(self.left_frame, text="2025", font=('Helvetica', 20),
+                                      justify="left", bg="#17120f", fg="white")
+        self.release_date_content.pack(anchor="nw")
 
         # Music controls here
 
