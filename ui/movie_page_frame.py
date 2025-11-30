@@ -2,6 +2,7 @@ from PIL import Image, ImageTk
 import tkinter as tk
 from models.movie import get_next_movie,get_prev_movie
 
+
 # Frames/Sub window
 class Movie_frame(tk.Frame):
     def __init__(self,parent,controller):
@@ -13,6 +14,8 @@ class Movie_frame(tk.Frame):
 
         self.movie_id = 0
 
+
+        # UPPER HEADER
         self.back_button = tk.Button(self, text="Back", bg="#17120f", fg="white",
                                      command=lambda: self.controller.show_main_menu_frame())
         self.back_button.grid(column=1, row=1,sticky="w")
@@ -25,6 +28,9 @@ class Movie_frame(tk.Frame):
                                      command=self.next_movie)
         self.next_button.grid(column=4, row=1,sticky="e")
 
+
+
+        # DETAILS FRAME (LEFT SIDE)
         self.details_frame = tk.Frame(self)
         self.details_frame.configure(background="#17120f")
         self.details_frame.grid(column=1, row=2)
@@ -100,12 +106,17 @@ class Movie_frame(tk.Frame):
 
 
 
-        # Display
+        # RIGHT SIDE POSTER
         self.movie_poster = tk.Label(self)
         self.movie_poster.image = ""
         self.movie_poster.grid(column=2, row=2, columnspan=3, rowspan=3, sticky="e")
 
         self.next_movie()
+
+
+        # TRAILER SECTION
+
+
 
     def load_movie(self, content):
         self.title_content.config(text=content["title"])
@@ -126,12 +137,16 @@ class Movie_frame(tk.Frame):
 
         self.genre_content.config(text=content["genre"])
 
-        self.img = Image.open(f"resources/{content["poster"]}")
+        self.img = Image.open(f"resources/{content['poster']}")
         self.img = self.img.resize((250, 416))
+
+
         # Convert for Tkinter
         self.photo = ImageTk.PhotoImage(self.img)
         self.movie_poster.config(image=self.photo)
         self.movie_poster.image = self.photo
+
+
 
 
     def next_movie(self):
