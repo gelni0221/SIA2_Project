@@ -128,7 +128,7 @@ class Music_frame(tk.Frame):
         self.album_content.config(text=f"{self.song_data[self.index]["Album"]}")
         self.release_date_content.config(text=f"{self.song_data[self.index]["Release Date"]}")
 
-    def load_musiclist(self):  # ← NO index parameter!
+    def load_musiclist(self):
         song_count = len(self.songs_mp3)
         for i in range(song_count):
             btn = tk.Button(self.right_container,
