@@ -20,7 +20,8 @@ c.execute(""" CREATE TABLE IF NOT EXISTS movie (
             writer text,
             actor text,
             genre text,
-            poster text
+            poster text,
+            video text
                 )
             """)
 
@@ -39,20 +40,35 @@ c.execute(""" CREATE TABLE IF NOT EXISTS movie (
 #
 # add movie
 movie_details = {
-    "title": "Interstellar",
-    "year": 2014,
-    "rating": 8.6,
-    "duration_mins": 169,
-    "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
-    "directors": ["Christopher Nolan"],
-    "writers": ["Jonathan Nolan", "Christopher Nolan"],
-    "actors": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain", "Bill Irwin", "Michael Caine", "Mackenzie Foy"],
-    "genre": ["Adventure", "Drama", "Sci-Fi"],
-    "poster": "interstellar.jpg"
+     "title": "The SpongeBob SquarePants Movie",
+    "year": 2004,
+    "rating": 7.1,
+    "duration_mins": 87,
+    "description": "SpongeBob and Patrick embark on an adventure to retrieve King Neptune's stolen crown and save Mr. Krabs from execution.",
+    "directors": ["Stephen Hillenburg", "Mark Osborne"],
+    "writers": ["Stephen Hillenburg", "Derek Drymon", "Tim Hill", "Kent Osborne", "Aaron Springer", "Paul Tibbitt"],
+    "actors": [
+        "Tom Kenny", "Bill Fagerbakke", "Clancy Brown",
+        "Rodger Bumpass", "Scarlett Johansson", "Jeffrey Tambor"
+    ],
+    "genre": ["Animation", "Adventure", "Comedy", "Family"],
+    "poster": "spongebob.jpg",
+    "video": "Spongebob.mp4"
 }
 
-c.execute("INSERT INTO movie (title, date, rating, duration, description, director, writer, actor, genre,poster) VALUES (?,?,?,?,?,?,?,?,?,?)",
-          (movie_details["title"],movie_details["year"],movie_details["rating"],movie_details["duration_mins"],movie_details["description"],json.dumps(movie_details["directors"]),json.dumps(movie_details["writers"]),json.dumps(movie_details["actors"]),json.dumps(movie_details["genre"]),movie_details["poster"]))
+c.execute("INSERT INTO movie (title, date, rating, duration, description, director, writer, actor, genre,poster,video) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+          (
+        movie_details["title"],
+        movie_details["year"],
+        movie_details["rating"],
+        movie_details["duration_mins"],
+        movie_details["description"],
+        json.dumps(movie_details["directors"]),
+        json.dumps(movie_details["writers"]),
+        json.dumps(movie_details["actors"]),
+        json.dumps(movie_details["genre"]),
+        movie_details["poster"],
+        movie_details["video"]))
 
 # c.execute("DELETE FROM movie WHERE id = ?", (2,))
 conn.commit() # for add and delete to actually take persistent effect
