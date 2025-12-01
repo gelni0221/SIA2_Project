@@ -2,6 +2,7 @@
 
 
 from tkinter import Tk
+
 from ui.app_ui_controller import App
 # from db.database import init_db
 
