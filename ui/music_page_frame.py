@@ -96,7 +96,7 @@ class Music_frame(tk.Frame):
         self.prev_button = tk.Button(self.left_container, text="Prev", bg="#17120f", fg="white", width=8, height=2,command=lambda: self.prev_music())
         self.prev_button.pack(side="left", padx=10, pady=10)
 
-        self.play_button = tk.Button(self.left_container, text="Play", bg="#17120f", fg="white", width=8, height=2, command=lambda: self.play_music())
+        self.play_button = tk.Button(self.left_container, text="Play", bg="#17120f", fg="white", width=8, height=2, command=lambda: self.start_music(self.index))
         self.play_button.pack(side="left", padx=10, pady=10)
 
         self.next_button = tk.Button(self.left_container, text="Next", bg="#17120f", fg="white", width=8, height=2,command=lambda: self.next_music())
@@ -135,7 +135,8 @@ class Music_frame(tk.Frame):
                             text=f"{self.song_data[i]['Title']} - {self.song_data[i]['Artist/Band']}",
                             bg="#17120f", fg="white")
             btn.pack(fill="x", padx=10, pady=5)
-            btn.config(command=lambda idx=i: self.play_music(idx))
+            btn.config(command=lambda idx=i: [self.stop_music(), self.play_music(idx)])
+
 
     def play_music(self, index):
         self.index = index
@@ -165,6 +166,11 @@ class Music_frame(tk.Frame):
             self.index = len(self.songs_mp3) - 1
         self.load_music()
         self.stop_music()
+
+    def start_music(self, index):
+        self.index = index
+        pygame.mixer.music.load(f"resources/{self.songs_mp3[self.index]}")
+        pygame.mixer.music.play()
 
 
     def stop_music(self):
