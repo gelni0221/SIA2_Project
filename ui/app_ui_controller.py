@@ -23,9 +23,9 @@ class App:
         self.music_frame = Music_frame(self.root, self)
         self.game_frame = game_frame(self.root, self)
 
-        # self.show_login_frame()
+        self.show_login_frame()
     #   test
-        self.show_main_menu_frame()
+    #     self.show_main_menu_frame()
 
     def handle_login(self, username, password):
         if login(username, password):
