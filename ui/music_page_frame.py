@@ -123,10 +123,10 @@ class Music_frame(tk.Frame):
         self.poster_img = ImageTk.PhotoImage(self.img)
         self.music_poster.config(image=self.poster_img)
         self.music_poster.image = self.poster_img
-        self.title_content.config(text=f"{self.song_data[self.index]["Title"]}")
-        self.artist_content.config(text=f"{self.song_data[self.index]["Artist/Band"]}")
-        self.album_content.config(text=f"{self.song_data[self.index]["Album"]}")
-        self.release_date_content.config(text=f"{self.song_data[self.index]["Release Date"]}")
+        self.title_content.config(text=f"{self.song_data[self.index]['Title']}")
+        self.artist_content.config(text=f"{self.song_data[self.index]['Artist/Band']}")
+        self.album_content.config(text=f"{self.song_data[self.index]['Album']}")
+        self.release_date_content.config(text=f"{self.song_data[self.index]['Release Date']}")
 
     def load_musiclist(self):
         song_count = len(self.songs_mp3)
@@ -145,10 +145,10 @@ class Music_frame(tk.Frame):
         self.poster_img = ImageTk.PhotoImage(self.img)
         self.music_poster.config(image=self.poster_img)
         self.music_poster.image = self.poster_img
-        self.title_content.config(text=f"{self.song_data[self.index]["Title"]}")
-        self.artist_content.config(text=f"{self.song_data[self.index]["Artist/Band"]}")
-        self.album_content.config(text=f"{self.song_data[self.index]["Album"]}")
-        self.release_date_content.config(text=f"{self.song_data[self.index]["Release Date"]}")
+        self.title_content.config(text=f"{self.song_data[self.index]['Title']}")
+        self.artist_content.config(text=f"{self.song_data[self.index]['Artist/Band']}")
+        self.album_content.config(text=f"{self.song_data[self.index]['Album']}")
+        self.release_date_content.config(text=f"{self.song_data[self.index]['Release Date']}")
 
 
     def next_music(self):
